@@ -1,0 +1,14 @@
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\bin\Debug\net8.0\ScreenShooter.exe
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\bin\Debug\net8.0\ScreenShooter.deps.json
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\bin\Debug\net8.0\ScreenShooter.runtimeconfig.json
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\bin\Debug\net8.0\ScreenShooter.dll
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\bin\Debug\net8.0\ScreenShooter.pdb
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\ScreenShooter.GeneratedMSBuildEditorConfig.editorconfig
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\ScreenShooter.AssemblyInfoInputs.cache
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\ScreenShooter.AssemblyInfo.cs
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\ScreenShooter.csproj.CoreCompileInputs.cache
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\ScreenShooter.dll
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\refint\ScreenShooter.dll
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\ScreenShooter.pdb
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\ScreenShooter.genruntimeconfig.cache
+C:\.Personal\Code\Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0\ref\ScreenShooter.dll

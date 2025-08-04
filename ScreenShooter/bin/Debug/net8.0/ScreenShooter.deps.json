@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ScreenShooter/1.0.0": {
+        "runtime": {
+          "ScreenShooter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ScreenShooter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
