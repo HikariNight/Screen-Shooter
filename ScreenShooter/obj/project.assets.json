@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\.Personal\\Code\\Projects\\ScreenShooter\\ScreenShooter\\ScreenShooter.csproj",
+      "projectUniqueName": "C:\\.Personal\\Code\\.Projects\\ScreenShooter\\ScreenShooter\\ScreenShooter.csproj",
       "projectName": "ScreenShooter",
-      "projectPath": "C:\\.Personal\\Code\\Projects\\ScreenShooter\\ScreenShooter\\ScreenShooter.csproj",
+      "projectPath": "C:\\.Personal\\Code\\.Projects\\ScreenShooter\\ScreenShooter\\ScreenShooter.csproj",
       "packagesPath": "C:\\Users\\Ryan O'brien Coker\\.nuget\\packages\\",
-      "outputPath": "C:\\.Personal\\Code\\Projects\\ScreenShooter\\ScreenShooter\\obj\\",
+      "outputPath": "C:\\.Personal\\Code\\.Projects\\ScreenShooter\\ScreenShooter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ryan O'brien Coker\\AppData\\Roaming\\NuGet\\NuGet.Config"

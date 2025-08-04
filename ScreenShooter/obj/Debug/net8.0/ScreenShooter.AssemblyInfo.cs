@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScreenShooter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e100f684d84f3b47f9253b904d702e3b19c456fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScreenShooter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScreenShooter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
