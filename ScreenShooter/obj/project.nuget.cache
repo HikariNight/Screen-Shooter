@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yFAjGBXxvxY=",
+  "dgSpecHash": "KIpdegekCJI=",
   "success": true,
-  "projectFilePath": "C:\\.Personal\\Code\\.Projects\\ScreenShooter\\ScreenShooter\\ScreenShooter.csproj",
+  "projectFilePath": "c:\\.Personal\\Code\\.Projects\\ScreenShooter\\ScreenShooter\\ScreenShooter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ryan O'brien Coker\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\Ryan O'brien Coker\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"

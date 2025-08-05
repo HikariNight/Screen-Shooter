@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ScreenShooter
-build_property.ProjectDir = C:\.Personal\Code\.Projects\ScreenShooter\ScreenShooter\
+build_property.ProjectDir = c:\.Personal\Code\.Projects\ScreenShooter\ScreenShooter\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
