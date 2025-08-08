@@ -41,7 +41,7 @@ public class Screenshot
             bitmap.Save(path, ImageFormat.Png);
             Console.WriteLine($"Screenshot saved to: {path}");
 
-            // Show the screenshot in a popup window, pass the filename for the title
+            // Show the screenshot in a popup window, putting the filename as the title
             Popup.ShowScreenshotPopup(bitmap, fileName);
         }
     }

@@ -17,7 +17,7 @@ public class Discord{
         // Add the image file
         var imageBytes = await File.ReadAllBytesAsync(imagePath);
         var imageContent = new ByteArrayContent(imageBytes);
-        imageContent.Headers.ContentType = MediaTypeHeaderValue.Parse("image/png"); // or "image/jpeg" if needed
+        imageContent.Headers.ContentType = MediaTypeHeaderValue.Parse("image/png");
         form.Add(imageContent, "file", Path.GetFileName(imagePath));
 
         // Send the POST request

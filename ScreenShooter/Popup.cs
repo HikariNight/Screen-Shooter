@@ -6,7 +6,7 @@ public class Popup
 {
     public static void ShowScreenshotPopup(Bitmap screenshot, string fileName)
     {
-        string userInput = ""; // Variable to store the user's text
+        string userInput = "";
 
         // Get the path where the screenshot was saved
         string directoryName = "Screenshots 2";
@@ -14,23 +14,30 @@ public class Popup
         string directoryPath = Path.Combine(picturesPath, directoryName);
         string imagePath = Path.Combine(directoryPath, fileName);
 
+        double aspectRatio = (double)screenshot.Width / screenshot.Height;
+        int extraHeight = 40 + 50; // TextBox + Button heights (from layout)
+        int minImgWidth = 200;
+        int minImgHeight = (int)(minImgWidth / aspectRatio);
+        int minHeight = minImgHeight + extraHeight;
+
         Form popup = new Form();
         popup.Text = $"Screenshot Preview - {fileName}";
         popup.StartPosition = FormStartPosition.CenterScreen;
-        popup.Size = new Size(screenshot.Width / 2, screenshot.Height / 2);
+        popup.Size = new Size(screenshot.Width / 2, screenshot.Height / 2 + extraHeight);
         popup.FormBorderStyle = FormBorderStyle.Sizable;
         popup.MaximizeBox = true;
         popup.MinimizeBox = true;
         popup.BackColor = Color.FromArgb(220, 235, 250); // Calm light blue
 
-        // Use a TableLayoutPanel for vertical layout
+        popup.MinimumSize = new Size(minImgWidth, minHeight);
+
         TableLayoutPanel layout = new TableLayoutPanel();
         layout.Dock = DockStyle.Fill;
         layout.RowCount = 3;
         layout.ColumnCount = 1;
         layout.RowStyles.Add(new RowStyle(SizeType.Percent, 80F)); // PictureBox takes most space
-        layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F)); // TextBox height
-        layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F)); // Button height
+        layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+        layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
         layout.BackColor = Color.Transparent;
 
         PictureBox pictureBox = new PictureBox();
@@ -60,14 +67,38 @@ public class Popup
         submitButton.Margin = new Padding(100, 5, 100, 15);
         submitButton.Cursor = Cursors.Hand;
 
-        // Add controls to the layout
         layout.Controls.Add(pictureBox, 0, 0);
         layout.Controls.Add(textBox, 0, 1);
         layout.Controls.Add(submitButton, 0, 2);
 
         popup.Controls.Add(layout);
 
-        // Handle submit button click
+        // Enforce resizing in image aspect ratio
+        bool resizing = false;
+        popup.Resize += (s, e) =>
+        {
+            if (resizing) return;
+            resizing = true;
+
+            int totalExtra = extraHeight + popup.Height - popup.ClientSize.Height;
+            int clientHeight = popup.ClientSize.Height;
+            int clientWidth = popup.ClientSize.Width;
+
+            // Calculate new width and height to maintain aspect ratio
+            int newImgHeight = clientHeight - extraHeight;
+            int newImgWidth = (int)(newImgHeight * aspectRatio);
+
+            if (clientWidth != newImgWidth)
+            {
+                newImgWidth = clientWidth;
+                newImgHeight = (int)(newImgWidth / aspectRatio);
+            }
+
+            popup.ClientSize = new Size(newImgWidth, newImgHeight + extraHeight);
+
+            resizing = false;
+        };
+
         submitButton.Click += (s, e) =>
         {
             userInput = textBox.Text;
@@ -76,12 +107,11 @@ public class Popup
             _ = Discord.SendTextAndImageToDiscordAsync(
                 "https://discord.com/api/webhooks/1403375327387848765/jNaJSM7e4TQVBFl9KqOaNtz8mqv6bZHMqMCBOgrbwrlYT1OLyxViQNEf_Tw5N-9yTJsa",
                 userInput,
-                imagePath // Use the actual saved image path
+                imagePath
             );
             popup.Close();
         };
 
-        // Show the popup as a modal dialog
         popup.ShowDialog();
     }
 }
