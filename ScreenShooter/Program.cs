@@ -14,7 +14,7 @@ class Program
     static void Main()
     {
         _hookID = SetHook(_proc);
-        Console.WriteLine("Screenshooter running in background... \nCtrl + Shift + S to capture. \nPress Ctrl + Shift + C to exit.\n");
+        Console.WriteLine("Screenshooter running in background... \nCtrl + Shift + S to capture. \nCtrl + Shift + C to exit.\n");
         Application.Run();
         UnhookWindowsHookEx(_hookID);
     }

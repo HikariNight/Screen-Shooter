@@ -12,3 +12,4 @@ c:\.Personal\Code\.Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0-windows
 c:\.Personal\Code\.Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0-windows\win-x64\ScreenShooter.pdb
 c:\.Personal\Code\.Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0-windows\win-x64\ScreenShooter.genruntimeconfig.cache
 c:\.Personal\Code\.Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0-windows\win-x64\ref\ScreenShooter.dll
+c:\.Personal\Code\.Projects\ScreenShooter\ScreenShooter\obj\Debug\net8.0-windows\win-x64\ScreenShooter.sourcelink.json
