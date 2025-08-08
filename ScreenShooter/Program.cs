@@ -68,7 +68,7 @@ class Program
         IntPtr wParam, IntPtr lParam);
 
     [DllImport("kernel32.dll")]
-    private static extern IntPtr GetModuleHandle(string? lpModuleName);
+    private static extern IntPtr GetModuleHandle(string lpModuleName);
 
     [DllImport("user32.dll")]
     private static extern short GetAsyncKeyState(int vKey);
